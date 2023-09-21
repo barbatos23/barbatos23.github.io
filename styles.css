@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+.contenido
+{
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+/*cambialo si es necesario*/
+.mostrador
+{
+    width: 100%;
+    transition: .5s ease;
+}
+.mostrador .fila
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.mostrador .fila .item
+{
+    max-width: 200px; 
+    padding: 30px;
+    height: 310px;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.mostrador .fila .item:hover
+{
+    background-color: #e6e6e6;
+}
+.mostrador .fila .item img
+{
+    width: 100%;
+    margin: 0px 0;
+}
+.mostrador .fila .item .descripcion
+{
+    color: #707070;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio
+{
+    color: #f85151;
+    font-weight: bold;
+    font-size: 20px;
+}
+.seleccion
+{
+    transition: 5s ease;
+    opacity: 0;
+    width: 0%;
+    border: 2px solid #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.cerrar
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+.info
+{
+    padding: 20px;
+}
+.info img
+{
+    display: block;
+    margin: 30px;
+    width: 80%;
+}
+.info h2
+{
+    color: #707070;
+    margin-bottom: 10px;
+}
+.info p
+{
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 10px;
+}
+.info .precio
+{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f85151;
+    margin-bottom: 10px;
+    display: block;
+}
+.info .fila
+{
+    display: flex;
+    align-items: flex-end;
+}
+.info .fila label
+{
+    display: block;
+    margin-bottom: 10px;
+}
+.info .fila select
+{
+    width: 50px;
+    font-size: 19px;
+    padding: 1px;
+    margin-right: 30px;
+}
+.info .fila button
+{
+    height: 30px;
+    border: none;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #f85151;
+}
+
+.cabeza
+{
+    padding: 0;
+    width: 100%;
+    background-image: radial-gradient( circle 767px at 10.2% 22.1%,  rgba(11,218,81,1) 0%, rgba(0,191,255,1) 90% );
+    min-height: 5px;
+    display:flex;
+
+}
+.cabeza .red_social 
+{
+    padding: 1rem;
+    min-width: 700px;
+    display: flex;
+    justify-content: left;
+}
+.cabeza .red_social a
+{
+    text-decoration: none;
+  font-size: 28px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+.cabeza .red_social a:hover
+{
+    transform: scale(1.2);
+}
+.cabeza .busqueda
+{
+    position: absolute;
+    left: 90%;
+    top: 1%;
+    transform: translate(-40%,30%);
+}
+.cabeza .busqueda input
+{
+    width: 0px;
+    height: 39.8px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 20px;
+    transition: all 0.6s ease;
+}
+.cabeza .busqueda .btn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+.cabeza .busqueda:hover input
+{
+    width: 240px;
+}
+.cabeza .busqueda input:focus
+{
+    width: 240px;
+}
+ .bodyweb
+{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+ .bodyweb ul
+{
+    display: flex;
+    animation: cambio 20s infinite
+    alternate linear;
+    width: 400%;
+}
+ .bodyweb li
+{
+    width: 100%;
+    list-style: none;
+}
+.bodyweb img
+{
+    width: 100%;
+}
+@keyframes cambio
+{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+.cabeza .logo .logo_imagen
+{    padding: 0;
+    width: 50%;
+    right: 100%;
+}
+
